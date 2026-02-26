@@ -1,0 +1,415 @@
+/* ================= LANDING PAGE ================= */
+
+/* Hero Section */
+.landing-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.landing-hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.landing-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+/* Trainer Section */
+.landing-trainer {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #f8f8f8;
+}
+.landing-trainer img {
+    width: 300px;
+    border-radius: 15px;
+}
+.landing-trainer-text {
+    max-width: 600px;
+}
+.landing-trainer-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.landing-trainer-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Packages Section */
+.landing-packages {
+    padding: 60px 20px;
+    background: #fff;
+}
+.landing-packages h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.landing-package-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+.landing-package-card {
+    min-width: 300px;
+    background: #f2e6d9;
+    border-radius: 15px;
+    padding: 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+.landing-package-card:hover {
+    transform: scale(1.05);
+}
+.landing-package-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.landing-package-card h3 {
+    margin-bottom: 10px;
+}
+.landing-package-card p {
+    flex: 1;
+    text-align: center;
+}
+.landing-package-card button {
+    padding: 10px 20px;
+    border: none;
+    background: #000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.landing-package-card button:hover {
+    background: #555;
+}
+.landing-package-container::-webkit-scrollbar {
+    display: none;
+}
+.landing-package-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/* Slideshow wrapper */
+.slideshow-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Scrollable track */
+.slideshow-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* Hide scrollbar */
+.slideshow-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Package card */
+.landing-package-card {
+    min-width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.landing-package-card:hover {
+    transform: scale(1.06);
+}
+
+.landing-package-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.landing-package-card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #725739;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.landing-package-card button:hover {
+    background-color: #d0ae96;
+}
+.text-image-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 60px;
+}
+
+.text-block {
+    flex: 1;
+    max-width: 500px;
+}
+
+.text-block h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.text-block p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: black;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #333;
+}
+
+.side-image {
+    flex: 1;
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+.language-switcher {
+    position: fixed;
+    top: 28px;
+    right: 160px; /* ajustează poziția */
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    user-select: none;
+}
+
+.language-label {
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.language-dropdown {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+}
+
+.language-dropdown div {
+    padding: 8px 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.language-dropdown div:hover {
+    background-color: #f0f0f0;
+}
+.landing-subscriptions {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.landing-subscriptions h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.subscriptions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.subscription-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+
+.subscription-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.subscription-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.subscription-card p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.subscription-card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription-card button:hover {
+    background-color: #0056b3;
+}
+.landing-reviews-carousel {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+}
+
+.landing-reviews-carousel h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.landing-reviews-carousel {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+}
+
+.landing-reviews-carousel h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.review-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.review-card p {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.review-card h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* săgeți elegante */
+.arrow {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.arrow:hover {
+    color: #333;
+    transform: scale(1.2);
+}
+
+.arrow.prev {
+    margin-right: 20px;
+}
+
+.arrow.next {
+    margin-left: 20px;
+}
+
+@media(max-width: 768px){
+    .arrow.prev, .arrow.next {
+        font-size: 2.5rem;
+        margin: 0 10px;
+    }
+
+    .review-card {
+        padding: 40px 25px;
+        
+    }
+}
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: absolute;
+    align-items: center;
+    padding: 20px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+

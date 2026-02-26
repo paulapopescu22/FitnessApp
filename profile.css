@@ -1,0 +1,84 @@
+.wizard-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.wizard-step {
+    text-align: center;
+}
+
+.fade-in {
+    animation: fade .4s ease;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.age-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.age-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.age-card:hover {
+    transform: scale(1.05);
+}
+
+.age-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-group button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-group button:hover {
+    background: #444;
+}
+
+.finish-btn {
+    margin-top: 20px;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    background: #18a85e;
+    color: white;
+    cursor: pointer;
+}
