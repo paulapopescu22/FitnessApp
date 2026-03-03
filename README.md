@@ -61,6 +61,28 @@ FitnessApp aims to:
 
 1. Clone the repository
 
-```sh
+
 git clone https://github.com/your-username/FitnessApp.git
 cd FitnessApp
+
+2. Install dependencies
+
+npm install
+
+3. Start the development server
+
+npm run dev
+
+4. Build for production
+
+npm run build
+
+---
+
+## Vision
+
+FitnessApp represents the foundation of my personal fitness brand in the digital space. The long-term vision is to transform this platform into a fully functional coaching system that connects training expertise with accessible technology.
+
+## Author 
+
+Popescu Paula-Marta
