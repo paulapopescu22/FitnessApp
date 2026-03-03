@@ -88,4 +88,4 @@ FitnessApp represents the foundation of my personal fitness brand in the digital
 ## Author 
 - Popescu Paula-Marta
 
-Popescu Paula-Marta
+
