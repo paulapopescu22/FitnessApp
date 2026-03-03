@@ -61,7 +61,7 @@ FitnessApp aims to:
 
 1. Clone the repository
 
-
+```sh
 git clone https://github.com/your-username/FitnessApp.git
 cd FitnessApp
 
